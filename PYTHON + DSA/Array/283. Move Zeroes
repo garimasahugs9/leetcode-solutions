@@ -1,0 +1,14 @@
+# leetcode 283: Move Zeroes
+
+class Solution(object):
+    def moveZeroes(self, nums):
+        result = []
+        
+        for num in nums:
+            if num!=0:
+                result.append(num)
+                    
+        zeros = len(nums)-len(result)
+        result.extend([0]*zeros)
+
+        nums[:]=result
