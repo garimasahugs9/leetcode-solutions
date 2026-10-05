@@ -1,0 +1,6 @@
+#leetcode 344: Reverse String
+
+
+class Solution(object):
+    def reverseString(self, s):
+        s.reverse()
